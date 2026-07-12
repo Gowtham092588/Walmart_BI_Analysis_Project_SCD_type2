@@ -1,0 +1,17 @@
+version: 2
+
+models:
+    - name: walmart_date_dim
+      description: "dbt model to create the walmart date dimension table"
+      columns:
+        - name: date_id
+          description: "This is the primary key of the table"
+          tests:
+            - unique
+            - not_null
+    - name: walmart_store_dim
+      description: "dbt model to create the walmart store dimension table"
+    - name: walmart_fact_table
+      description: "dbt model to create walmart fact table"
+
+

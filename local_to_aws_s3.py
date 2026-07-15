@@ -32,9 +32,9 @@ def s3_multi_upload(file_names, folder, bkt):
 if __name__ == "__main__":
 
     files = [
-        'C:\Users\yamun\Desktop\Walmart_BI Analysis_Mini_Project\department.csv',
-        'C:\Users\yamun\Desktop\Walmart_BI Analysis_Mini_Project\fact.csv',
-        'C:\Users\yamun\Desktop\Walmart_BI Analysis_Mini_Project\stores.csv'
+        'C:\\Users\\yamun\\Desktop\\Walmart_BI Analysis_Mini_Project\\CSV files\\department.csv',
+        'C:\\Users\\yamun\\Desktop\\Walmart_BI Analysis_Mini_Project\\CSV files\\fact.csv',
+        'C:\\Users\\yamun\\Desktop\\Walmart_BI Analysis_Mini_Project\\CSV files\\stores.csv'
     ]
 
     status = s3_multi_upload(files, "raw_data", "walmart-s3-raw-data-bucket")

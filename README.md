@@ -2,7 +2,7 @@
 
 This project implements a production-ready data pipeline for analyzing walmart sales. It ingests, transforms, aggregates, and visualizes data using Python, S3, Snowflake, dbt and Tableau, following a Raw–Transform–Marts architecture.
 
-## Business Objective \
+## Business Objective 
 
 Collect Department, Store and Fact data.
 Automate data processing using dbt and generate reporting using tableau or python

@@ -38,3 +38,6 @@ This project implements a production-ready data pipeline for analyzing walmart s
 * Secure, scalable, and cost-efficient
 * Generates actionable marketing insights report.
 
+## Repository
+
+GitHub:https://github.com/Gowtham092588/Walmart_BI_Analysis_Project_SCD_type2

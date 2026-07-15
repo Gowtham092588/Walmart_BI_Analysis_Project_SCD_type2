@@ -9,7 +9,8 @@ This project implements a production-ready data pipeline for analyzing walmart s
 * Generate insights to improve marketing strategies
 
 ## Architecture
-![Walmart_BI_Analysis_Architecture](C:\Users\yamun\Desktop\Walmart_BI Analysis_Mini_Project\Architecture Diag\Walmart_BI_Analysis_Architecture.png)
+<img width="1779" height="784" alt="image" src="https://github.com/user-attachments/assets/0d638625-c23f-41f9-8122-1a0db6d43035" />
+
 
 ## Key Steps
 

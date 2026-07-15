@@ -1,0 +1,51 @@
+version: 2
+
+models:
+  - name: walmart_date_dim
+    description: "dbt model to create the walmart date dimension table"
+    columns:
+      - name: date_id
+        description: "This is the primary key of the table"
+        tests:
+          - unique
+          - not_null
+
+  - name: walmart_store_dim
+    description: "dbt model to create the walmart store dimension table"
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns:
+              - store_id
+              - dept_id
+    columns:
+      - name: store_id
+        tests:
+          - not_null
+      - name: dept_id
+        tests:
+          - not_null
+
+  - name: walmart_fact_table
+    description: "dbt model to create walmart fact table"
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns:
+              - store_id
+              - dept_id
+              - date_id
+    columns:
+      - name: store_id
+        description: "This one of the primary key of the fact table"
+        tests:
+          - not_null
+      - name: dept_id
+        description: "This one of the primary key of the fact table"
+        tests:
+          - not_null
+      - name: date_id
+        description: "This one of the primary key of the fact table"
+        tests:
+          - not_null
+

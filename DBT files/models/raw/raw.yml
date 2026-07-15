@@ -1,0 +1,72 @@
+version: 2
+
+models:
+  - name: department_raw
+    description: "dbt model to create the department raw table"
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns:
+              - store
+              - dept
+              - date
+    columns:
+      - name: store
+        tests:
+          - not_null
+      - name: dept
+        tests:
+          - not_null
+      - name: date
+        tests:
+          - not_null
+
+  - name: stores_raw
+    description: "dbt model to create the stores raw table"
+    columns:
+      - name: store
+        tests:
+          - not_null
+          - unique
+      - name: TYPE
+        tests:
+          - not_null
+      - name: SIZE
+        tests:
+          - not_null
+
+  - name: fact_raw
+    description: "dbt model to create the fact raw table"
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns:
+              - STORE
+              - DATE
+    columns:
+      - name: STORE
+        tests:
+          - not_null
+      - name: DATE
+        tests:
+          - not_null
+
+
+sources:
+  - name: department
+    database: WALMARTDB
+    schema: DATA
+    tables:
+      - name: DEPARTMENT_CP
+  
+  - name: stores
+    database: WALMARTDB
+    schema: DATA
+    tables:
+      - name: STORES_CP
+  
+  - name: fact
+    database: WALMARTDB
+    schema: DATA
+    tables:
+      - name: FACT_CP

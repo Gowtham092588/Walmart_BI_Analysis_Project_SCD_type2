@@ -8,7 +8,7 @@ Automate data processing using dbt and generate reporting using tableau or pytho
 Generate insights to improve marketing strategies
 
 Architecture
-![alt text](image.png)
+![alt text](image-1.png)
 
 Key Steps
 

@@ -1,5 +1,7 @@
 # Welcome to Walmart BI Analysis Project!
 
+Overview
+
 This project implements a production-ready data pipeline for analyzing walmart sales. It ingests, transforms, aggregates, and visualizes data using Python, S3, Snowflake, dbt and Tableau, following a Raw–Transform–Marts architecture.
 
 ## Business Objective

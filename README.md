@@ -40,8 +40,9 @@ This project implements a production-ready data pipeline for analyzing walmart s
 * Secure, scalable, and cost-efficient
 * Generates actionable marketing insights report.
 
-### Author
+### 👤 Author
 
-* Gowtham Kethineni
-* Data Engineer
-* https://www.linkedin.com/in/gowtham-kethineni/
+**Gowtham Kethineni**  
+Data Engineer 
+
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/gowtham-kethineni/)

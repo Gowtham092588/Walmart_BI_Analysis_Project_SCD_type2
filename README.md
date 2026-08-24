@@ -43,6 +43,4 @@ This project implements a production-ready data pipeline for analyzing walmart s
 ### 👤 Author
 
 **Gowtham Kethineni**  
-Data Engineer 
-
-🔗 [LinkedIn Profile](https://www.linkedin.com/in/gowtham-kethineni/)
+https://www.linkedin.com/in/gowtham-kethineni

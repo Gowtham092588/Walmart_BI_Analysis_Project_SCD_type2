@@ -36,6 +36,11 @@ The automated S3 → Snowflake → dbt → Tableau pipeline reduced manual prepa
 * Tableau connects directly to the curated marts/Gold layer in Snowflake to deliver interactive dashboards for executives, Merchandising, Finance, and Supply Chain teams.
 
 
+## Chanllenges
+* Duplicate records and incorrect sales totals.
+* Incremental processing without reliable timestamps.
+
+
 ### Author
 
 **Gowtham Kethineni**  

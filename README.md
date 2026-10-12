@@ -11,7 +11,9 @@ This project implements a production-ready data pipeline for analyzing walmart s
 * Generate insights to improve marketing strategies
 
 ## Architecture
-<img width="1779" height="784" alt="image" src="https://github.com/user-attachments/assets/0d638625-c23f-41f9-8122-1a0db6d43035" />
+
+<img width="1081" height="548" alt="image" src="https://github.com/user-attachments/assets/cc238df0-726c-4b78-af69-07502faf75d4" />
+
 
 
 ## Key Steps
